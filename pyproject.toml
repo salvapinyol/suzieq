@@ -50,6 +50,7 @@ notebook = "6.4.12"
 urllib3 = "^1.26.12"
 packaging = "^21.3"
 psutil = "^5.9.4"
+jellyfish = "~0.10"
 
 [tool.poetry.dev-dependencies]
 pylint = "*"
