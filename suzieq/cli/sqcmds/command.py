@@ -386,7 +386,7 @@ class SqCommand(SqPlugin):
                 df = pd.DataFrame({'error': [f'ERROR: UserQueryError: {ex}']})
             else:
                 if self.ctxt.debug:
-                    raise Exception from ex
+                    raise ex
                 df = pd.DataFrame({'error': [f'ERROR: {ex}']})
 
         return df
