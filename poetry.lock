@@ -3081,13 +3081,13 @@ pytest = ">=3"
 
 [[package]]
 name = "pytest-icdiff"
-version = "0.5"
+version = "0.6"
 description = "use icdiff for better error messages in pytest assertions"
 category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "pytest-icdiff-0.5.tar.gz", hash = "sha256:3a14097f4385665cb04330e6ae09a3dd430375f717e94482af6944470ad5f100"},
+    {file = "pytest-icdiff-0.6.tar.gz", hash = "sha256:e8f1ef4550a893b4f0a0ea7e7a8299b12ded72c086101d7811ddec0d85fd1bad"},
 ]
 
 [package.dependencies]
@@ -4588,4 +4588,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = ">3.8.1, < 3.10"
-content-hash = "d723f370288b08af7455685b76971989695a22152c20c2dbf962d0a21730f055"
+content-hash = "56940fe5d0032eb63dad770d63fb679c41012380a5d3608d882d1cec3c022db0"
