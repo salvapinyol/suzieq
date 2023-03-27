@@ -166,8 +166,8 @@ def set_def_aggrid_options(grid_options: dict):
 
 def get_image_dir():
     '''Get directory where images are stored'''
-    return(os.path.dirname(find_spec('suzieq.gui')
-                           .loader.path) + '/images')
+    return (os.path.dirname(find_spec('suzieq.gui')
+                            .loader.path) + '/images')
 
 
 def color_row(row, **kwargs):
