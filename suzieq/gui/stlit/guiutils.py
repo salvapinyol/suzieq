@@ -128,7 +128,7 @@ def get_session_id():
     '''Return Streamlit's session ID'''
     ctx = get_script_run_ctx()
     if ctx is None:
-        raise Exception("Failed to get the thread context")
+        raise AttributeError("Failed to get the thread context")
     return ctx.session_id
 
 
