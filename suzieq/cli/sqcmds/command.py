@@ -326,12 +326,13 @@ class SqCommand(SqPlugin):
                 if 'timestamp' in cols:
                     cols.remove('timestamp')
 
-            with pd.option_context('format.precision', 3,
-                                   'display.width', None,
-                                   'display.max_columns', None,
-                                   'display.max_colwidth', max_colwidth,
-                                   'display.expand_frame_repr', not all_columns,
-                                   'display.max_rows', max_rows):
+            with pd.option_context(
+                    'format.precision', 3,
+                    'display.width', None,
+                    'display.max_columns', None,
+                    'display.max_colwidth', max_colwidth,
+                    'display.expand_frame_repr', not all_columns,
+                    'display.max_rows', max_rows):
 
                 df = self.sqobj.humanize_fields(df)
                 if df.empty:
